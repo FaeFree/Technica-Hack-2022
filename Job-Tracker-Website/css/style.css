@@ -2,18 +2,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 .container{
     display: flex;
     justify-content: space-between;
+    align-items: end;
+
 }
 .item{
-    flex-grow: 1; /* idk if this is the right way to do this. You'd probably want to make "grow" item-specific */
     background: rgb(143, 158, 223);
     color: white;
     border: 2px black dotted;
+    height: 100vh;
+}
+
+#left-nav{
+    flex-grow: 1;
+}
+#main-content{
+    flex-grow: 4;
+}
+#right-sidebar{
+    flex-grow: 2;
 }
